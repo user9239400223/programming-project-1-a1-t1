@@ -1,8 +1,9 @@
 @import "tailwindcss";
 
+/* dark mode by default — matches the approved design spec */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
 @theme inline {
@@ -10,13 +11,22 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* design spec color tokens — see stylings.md for full reference */
+  --color-surface: #18181B;
+  --color-surface-alt: #EDEDED;
+  --color-surface-sunken: #0C0C0E;
+  --color-surface-raised: #1F1F23;
+
+  --color-border: #27272A;
+  --color-border-raised: #2E2E33;
+  --color-border-focus: #EDEDED;
+  --color-border-error: #E83F48;
+
+  --color-primary: #EDEDED;
+  --color-inverse: #09090B;
+  --color-muted: #A0A0A8;
+  --color-error: #F26B72;
 }
 
 body {

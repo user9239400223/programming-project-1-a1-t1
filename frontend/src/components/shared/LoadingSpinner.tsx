@@ -27,7 +27,7 @@ export function LoadingSpinner({ size = 'md', className }: LoadingSpinnerProps) 
 
 export function FullPageSpinner() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center bg-[#09090B]">
       <LoadingSpinner size="lg" />
     </div>
   )
